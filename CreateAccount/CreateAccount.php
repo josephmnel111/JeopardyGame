@@ -1,5 +1,5 @@
 <?php
-    include_once 'LoginDB.php';
+    include_once '../Login/LoginDB.php';
     $u_val = htmlspecialchars($_POST['username']);
     $p_val = htmlspecialchars($_POST['password']);
 
@@ -21,9 +21,9 @@
     }
     if (($found_val == 0) && ($u_val != "") && ($p_val != "")) {
         $insert_query = mysqli_query($loginConnection, $insert_sqlStatement); //Insert the new account into database
-        header("Location: index.html");
+        header("Location: ../index.html");
     } else {
-        header("Location: ErrorScreens/CreateAccountError.html");
+        header("Location: ../ErrorScreens/CreateAccountError.html");
     }
 
 
