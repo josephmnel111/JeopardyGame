@@ -1,5 +1,5 @@
 <?php
-    include_once 'LoginDB.php';
+    include_once '../Login/LoginDB.php';
     $high_score = htmlspecialchars($_POST['money_tracker_send']);
     $high_score_copy = substr($high_score, 1);
     $get_sqlStatement = "SELECT * FROM LoginTable";

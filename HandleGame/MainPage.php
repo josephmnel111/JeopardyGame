@@ -1,5 +1,5 @@
 <?php 
-    include_once 'LoginDB.php';
+    include_once '../Login/LoginDB.php';
     $get_sqlStatement = "SELECT * FROM LoginTable ORDER BY HighScore DESC";
     
     $get_query = mysqli_query($loginConnection, $get_sqlStatement);
@@ -22,7 +22,7 @@
 <html lang = 'en' dir = 'ltr'>
     <head>
         <title>Project 4</title>
-        <link rel= "stylesheet" href = "styles/MainPage.css">
+        <link rel= "stylesheet" href = "../styles/MainPage.css">
         <meta charset = "utf-8">
     </head>
     <body>
@@ -57,7 +57,7 @@
         </ol>
         <form action = "PlayGame.php" method = "post">
             <input type = "submit" class = "designButton" value = "Play Game"><br>
-            <a href = "index.html">Logout</a>
+            <a href = "../index.html">Logout</a>
         </form>
 
     </body>

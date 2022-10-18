@@ -20,9 +20,9 @@
         }
     }
     if ($found_val == 1) {
-      header("Location: MainPage.php");
+      header("Location: ../HandleGame/MainPage.php");
     } else {
-       header("Location: ErrorScreens/LoginError.html");
+       header("Location: ../ErrorScreens/LoginError.html");
     }
 
 
